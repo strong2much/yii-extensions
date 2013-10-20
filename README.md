@@ -1,4 +1,4 @@
 yii-extensions
 ==============
 
-All my build extensions for Yii
+Extensions for Yii
