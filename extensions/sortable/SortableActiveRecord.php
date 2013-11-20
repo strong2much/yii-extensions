@@ -55,7 +55,7 @@ class SortableActiveRecord extends CActiveRecord
             $i = 1;
             foreach($ids as $id){
                 Yii::app()->db->createCommand()
-                    ->update($this->tableName(),array('sorter'=>':sorter'),'id=:id',array(':sorter'=>$i,':id'=>$id));
+                    ->update($this->tableName(),array('sorter'=>$i),'id='.$id);
                 $i++;
             }
         }
